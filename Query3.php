@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "Atmosphere55!", "sephora");
+$mysqli = new mysqli("coffee-gave-me-gas.cgzqmhf3sjbn.us-east-2.rds.amazonaws.com", "root", "csc4112018", "projectcoffee");
 $result = $mysqli->query("SELECT storeName AS 'Store', store_ID AS 'Store Number', MAX(amountSold) as 'Sales'
                         FROM store INNER JOIN sales ON store.ID = sales.store_ID
                         WHERE amountSold > 0

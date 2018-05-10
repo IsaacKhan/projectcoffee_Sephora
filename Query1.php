@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "Atmosphere55!", "sephora");
+$mysqli = new mysqli("coffee-gave-me-gas.cgzqmhf3sjbn.us-east-2.rds.amazonaws.com", "root", "csc4112018", "projectcoffee");
 $result = $mysqli->query("SELECT Rank, productName AS Product, units AS 'Units Sold', storeName AS Store
 FROM (SELECT product_ID AS upc, amountSold AS units_sold, store_ID, storeName,
         -- Leveraged mysql session variables to track ranking 

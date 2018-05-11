@@ -47,7 +47,7 @@ if($result->num_rows > 0)
     }
 
     #echo $rank . ".) " . $row["Product"] . " " . $row["Units Sold"]  . " " . $row["Store"] ." <br>"; 
-    echo "<tr><td>" . $row['Rank'] . "</td><td>" . $row['Product'] . "</td><td>" . $row['Units Sold'] . "</td><td>" . $row['Store'] . "</td></tr>";
+    echo "<tr><td>" . $rank . "</td><td>" . $row['Product'] . "</td><td>" . $row['Units Sold'] . "</td><td>" . $row['Store'] . "</td></tr>";
     
     $prev_store = $row["store_ID"];
  

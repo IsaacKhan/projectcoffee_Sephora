@@ -41,9 +41,7 @@ if($result->num_rows > 0)
       $rank++;
     else 
     {
-      echo "<br>";
-      echo "Top 20 for ". $row["Store"]. " ". $row["store_ID"];
-      echo "<br>";
+      echo "<tr><td>" . "Top 20 for ". $row["Store"]. " ". $row["store_ID"] . "</td></tr>";
 
       $rank = 1;
     }
